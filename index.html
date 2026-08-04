@@ -72,7 +72,7 @@
         </article>
         <article>
           <div><h3>Teilgrundüberholung</h3><p>Bei klar begrenzten Schäden erneuern wir nur die Problemzonen. Der intakte Platzaufbau bleibt bestehen.</p></div>
-          <a href="#grund" aria-label="Zum Ablauf der Teilgrundüberholung">Ablauf ansehen <span>→</span></a>
+          <a href="#teilgrund" aria-label="Zur Teilgrundüberholung">Ablauf ansehen <span>→</span></a>
         </article>
         <article>
           <div><h3>Beregnungsanlagen</h3><p>Automatische Versenkberegnung für Tennisplätze, Sportanlagen und Grünflächen – leise und wassersparend.</p></div>
@@ -112,19 +112,42 @@
       </dl>
     </section>
 
-    <section class="rebuild" id="grund">
-      <div class="rebuild__photo"><img src="assets/img/IMG_GRUND.jpeg" alt="Grundüberholung eines Tennisplatzes" width="1448" height="1086" loading="lazy"></div>
-      <div class="rebuild__copy">
-        <p class="label">Wenn Wasser stehen bleibt</p>
-        <h2>Grundüberholung statt immer neuer Reparaturen.</h2>
-        <p>Nach 15 bis 25 Jahren können dynamische Schicht und Drainage ihre Wasserdurchlässigkeit verlieren. Dann reicht oberflächliche Pflege nicht mehr.</p>
-        <ul>
-          <li>Alte, verdichtete Schichten ausbauen</li>
-          <li>Drainage und dynamische Schicht erneuern</li>
-          <li>Linien, Netzpfosten und Tennenbelag neu setzen</li>
-          <li>Auf Wunsch nur klar begrenzte Problemzonen bearbeiten</li>
-        </ul>
-        <a class="button button--dark" href="tel:+492556997029">Zustand einschätzen lassen <span>→</span></a>
+    <section class="rebuild-slider" data-rebuild-slider aria-label="Grund- und Teilgrundüberholung">
+      <div class="rebuild__track">
+        <article class="rebuild" id="grund" data-rebuild-slide>
+          <div class="rebuild__photo"><img src="assets/img/IMG_GRUND.jpeg" alt="Grundüberholung eines Tennisplatzes" width="1448" height="1086" loading="lazy"></div>
+          <div class="rebuild__copy">
+            <p class="label">Wenn Wasser stehen bleibt</p>
+            <h2>Grundüberholung statt immer neuer Reparaturen.</h2>
+            <p>Nach 15 bis 25 Jahren können dynamische Schicht und Drainage ihre Wasserdurchlässigkeit verlieren. Dann reicht oberflächliche Pflege nicht mehr.</p>
+            <ul>
+              <li>Alte, verdichtete Schichten ausbauen</li>
+              <li>Drainage und dynamische Schicht erneuern</li>
+              <li>Linien, Netzpfosten und Tennenbelag neu setzen</li>
+              <li>Auf Wunsch nur klar begrenzte Problemzonen bearbeiten</li>
+            </ul>
+            <a class="button button--dark" href="tel:+492556997029">Zustand einschätzen lassen <span>→</span></a>
+          </div>
+        </article>
+        <article class="rebuild" id="teilgrund" data-rebuild-slide>
+          <div class="rebuild__photo"><img src="assets/img/tgrund_03.webp" alt="Teilgrundüberholung eines Tennisplatzes" width="840" height="630" loading="lazy"></div>
+          <div class="rebuild__copy">
+            <p class="label">Teilgrundüberholung</p>
+            <h2>Teilgrund­überholung</h2>
+            <p>Je nachdem, wie sich die Gesamtbeschaffenheit des Platzes darstellt, kann die kleinere Lösung die sinnvollere sein.</p>
+            <p>Dabei werden nur in vorher klar eingegrenzten Bereichen die alten wasserundurchlässigen Schichten ausgebaut und fachgerecht entsorgt. Der überwiegende Teil des Platzes bleibt, wie er ist. Die Arbeitsabläufe gleichen denen der vollständigen Grundüberholung: auch hier wird alles genau eingemessen und mit modernen Maschinen ausgeführt.</p>
+            <ul>
+              <li>Deutlich geringerer Aufwand als eine komplette Grundüberholung</li>
+              <li>Auch mehrere getrennte Teilbereiche auf einem Platz möglich</li>
+              <li>Beregnungsanlage lässt sich im selben Zug einbauen</li>
+            </ul>
+            <a class="button button--dark" href="tel:+492556997029">Zustand einschätzen lassen <span>→</span></a>
+          </div>
+        </article>
+      </div>
+      <div class="rebuild__controls shell" aria-label="Überholungsart wählen">
+        <button type="button" data-rebuild-to="0" aria-pressed="true">Grundüberholung</button>
+        <button type="button" data-rebuild-to="1" aria-pressed="false">Teilgrundüberholung</button>
       </div>
     </section>
 
