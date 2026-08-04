@@ -16,12 +16,17 @@ nav.addEventListener('click', event => {
     header.classList.remove('is-open');
 
     const href = link.getAttribute('href');
-    const target = href?.startsWith('#') ? document.querySelector(href) : null;
-    if (target && ['leistungen', 'ablauf', 'projekte'].includes(target.id)) {
+    const anchorTargets = {
+      '#leistungen': '.problem__lead .label',
+      '#ablauf': '.process__head .label',
+      '#projekte': '.work__head .label'
+    };
+    const target = anchorTargets[href] ? document.querySelector(anchorTargets[href]) : null;
+    if (target) {
       event.preventDefault();
       const headerHeight = header.getBoundingClientRect().height;
       const top = target.getBoundingClientRect().top + window.scrollY - headerHeight - 48;
-      window.history.pushState(null, '', `#${target.id}`);
+      window.history.pushState(null, '', href);
       window.scrollTo({
         top: Math.max(0, top),
         behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
