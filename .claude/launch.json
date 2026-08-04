@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "name": "AVERBECK-NEU Vorschau",
+      "type": "command",
+      "program": "python3",
+      "args": ["-m", "http.server", "3007"],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
