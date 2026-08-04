@@ -20,7 +20,10 @@ nav.addEventListener('click', event => {
 const anchorTargets = {
   '#leistungen': '.problem__lead .label',
   '#ablauf': '.process__head .label',
-  '#projekte': '.work__head .label'
+  '#grund': '.rebuild__copy .label',
+  '#beregnung': '.water__head .label',
+  '#projekte': '.work__head .label',
+  '#standorte': '.locations__intro .label'
 };
 
 document.addEventListener('click', event => {
