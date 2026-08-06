@@ -46,4 +46,21 @@ document.addEventListener('click', event => {
     behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
   });
 });
+
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (!reduceMotion && 'IntersectionObserver' in window) {
+  const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      revealObserver.unobserve(entry.target);
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -8%' });
+
+  document.querySelectorAll('main > section:not(.hero)').forEach(section => {
+    section.classList.add('reveal-on-scroll');
+    revealObserver.observe(section);
+  });
+}
+
 document.querySelector('[data-year]').textContent = new Date().getFullYear();
