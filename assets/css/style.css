@@ -17,11 +17,9 @@ h3{font-size:clamp(1.35rem,2vw,1.8rem)}
 .skip:focus{top:1rem}
 .label{margin-bottom:1.2rem;color:var(--red-dark);font-size:.86rem;font-weight:750;letter-spacing:.1em;text-transform:uppercase}
 .label--light{color:var(--ink-2)}
-.header{position:fixed;inset:0 0 auto;z-index:var(--sticky);border-bottom:1px solid transparent;color:var(--white);transition:background .3s,border-color .3s,color .3s}
-.header.is-stuck,.header.is-open{background:rgba(255,255,255,.96);border-color:var(--line);color:var(--ink);backdrop-filter:blur(12px)}
+.header{position:fixed;inset:0 0 auto;z-index:var(--sticky);background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);color:var(--ink);backdrop-filter:blur(12px)}
 .header__inner{display:flex;align-items:center;gap:1.4rem;height:5.25rem}
-.logo{width:min(17rem,26vw);margin-right:auto;line-height:0;filter:brightness(0) invert(1)}
-.header.is-stuck .logo,.header.is-open .logo{filter:none}
+.logo{width:min(17rem,26vw);margin-right:auto;line-height:0}
 .nav{display:flex;align-items:center;gap:.15rem}
 .nav a{padding:.55rem .7rem;font-size:.9rem;font-weight:650;text-decoration:none;white-space:nowrap}
 .nav a:hover{text-decoration:underline}

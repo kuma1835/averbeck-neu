@@ -1,9 +1,6 @@
 const header = document.querySelector('[data-header]');
 const menu = document.querySelector('.menu');
 const nav = document.querySelector('.nav');
-const updateHeader = () => header.classList.toggle('is-stuck', window.scrollY > 24);
-updateHeader();
-window.addEventListener('scroll', updateHeader, { passive: true });
 menu.addEventListener('click', () => {
   const open = menu.getAttribute('aria-expanded') !== 'true';
   menu.setAttribute('aria-expanded', String(open));
